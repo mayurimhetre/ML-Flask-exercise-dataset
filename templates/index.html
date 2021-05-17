@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercise Predictor</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+        <div class="header">
+            <div class="header-center">
+              <h1>Exercise Dataset From Seaborn library</h1>
+            </div>
+        </div>
+        </br>
+        </br>
+
+        <!-- Text Area -->
+
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <input class="form-input" required="required" type="text" name="id" placeholder="Enter id number between 1 to 30"><br>
+                </br>
+                <input class="form-input" required="required" type="text" name="pulse" placeholder="Pulse rate eg. 60 to 100 beats per minute"><br>
+                </br>
+                <input class="form-input" required="required" type="text" name="diet" placeholder="Diet eg.Low or High fat"><br>
+                </br>
+                <input class="form-input" required="required" type="text" name="time" placeholder="Time of exercise (min) eg. 1 or 15 or 30"><br>
+        		</br>
+                <button  name = "submit" class="btn btn-primary stretched-link" role="button" aria-pressed="true">Submit</button>
+
+            </form>
+
+
+        <!-- Footer -->
+        <footer>
+          <p>Project by: Mayuri Mhetre<br>
+          <a href="https://github.com/mayurimhetre/ML-Flask-exercise-dataset">Source Code</a></p>
+        </footer>
+
+    <style>
+        body {
+           background-image: url(http://www.joburgchiropractor.co.za/images/background.jpg);
+           text-align: center;
+        }
+        h1 { text-align: center;
+            }
+        input[type=text] {
+          width: 30%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+
+    </style>
+    </body>
+</html>

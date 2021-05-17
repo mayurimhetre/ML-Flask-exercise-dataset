@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise Predictor</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+
+    <body>
+
+        <!-- Website Title -->
+        <div class="header">
+            <div class="header-center">
+              <h1>Exercise Dataset From Seaborn library</h1>
+            </div>
+        </div>
+        </br>
+        </br>
+
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction== 'walking' %}
+				<h1>Prediction: <span class='danger'>You are walking</span></h1>
+				<img class="gif" src="{{ url_for('static', filename='walk.png') }}" alt="exercise Image">
+			{% elif prediction== 'running' %}
+				<h1>Prediction: <span class='safe'>Great! You are running.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='running.png') }}" alt="Not exercise Image">
+			{% elif prediction== 'rest' %}
+				<h1>Prediction: <span class='safe'>You are having rest.</span></h1>
+				<img class="gif2" src="{{ url_for('static', filename='rest.png') }}" alt="Not exercise Image">
+			{% endif %}
+		</div>
+
+		<!-- Footer -->
+        <footer>
+          <p>Project by: Mayuri Mhetre<br>
+          <a href="https://github.com/mayurimhetre/ML-Flask-exercise-dataset">Source Code</a></p>
+        </footer>
+		<style>
+        body {
+           background-image: url(http://www.joburgchiropractor.co.za/images/background.jpg);
+           text-align: center;
+        }
+        h1 { text-align: center;
+            }
+            </style>
+	</body>
+</html>
