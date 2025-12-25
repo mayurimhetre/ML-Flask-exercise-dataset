@@ -2,8 +2,6 @@
 
 **Model deployed on Heroku Platform:**
 
-heroku link : https://ml-exercise.herokuapp.com/
-
 This project was developed in Pycharm and for web application Flask is used.
 
 1.Logistic Regression gives 94 percent accuracy.
