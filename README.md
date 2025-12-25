@@ -4,7 +4,7 @@
 
 This project was developed in Pycharm and for web application Flask is used.
 
-1.Logistic Regression gives 94 percent accuracy.
+1.Logistic Regression gives 94 % accuracy.
 
 2.There are 3 categories in dependent variables- running, walking and rest.
 
