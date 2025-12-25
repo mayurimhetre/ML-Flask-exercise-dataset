@@ -34,13 +34,15 @@ df = sns.load_dataset("exercise")
 df.head()
 ```
 
-**Model deployed on Heroku Platform:**
+### Results
 
-This project was developed in Pycharm and for web application Flask is used.
-
-1.Logistic Regression gives 94 % accuracy.
-
-2.There are 3 categories in dependent variables- running, walking and rest.
+- A **Logistic Regression** model was trained and evaluated, achieving an **accuracy of 94%**.
+- The target variable consists of **three activity categories**:
+  - **Running**
+  - **Walking**
+  - **Rest**
+- The model successfully classifies physical activity based on the input features.
+- The following screenshots illustrate the model’s predictions and the web application output.
 
 
 ![image](https://user-images.githubusercontent.com/68188457/118449469-d1abf780-b710-11eb-8330-ab57e88cf2a8.png)
